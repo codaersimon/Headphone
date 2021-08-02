@@ -410,9 +410,11 @@ form{
     border-radius: 2px;
     width: 100px;
     text-align: center;
+    transition: all .5s ease-out;
 }
 #Submit:hover{
     background-color: #cc8f7a;
+    transition: all .5s ease
 }
 #Message{
     height: 100px;
