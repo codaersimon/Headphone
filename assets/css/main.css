@@ -1,0 +1,418 @@
+@font-face {
+    font-family: work sans;
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+    font-weight: 100 900
+}
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS General */
+html{
+    font-size: 100%;
+}
+body{
+    font-family: work sans;
+    background-color: #2e2e2e;
+}
+h1{
+    color: #ebccc2;
+    font-weight: 300;
+    font-size: 2rem;
+}
+h2{
+    color: #ebccc2;
+    font-weight: 300;
+    font-size: 2rem;
+}
+p{
+    color: rgb(115, 115, 115);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(115, 115, 115);
+    font-size: 12px;
+}
+a:hover{
+    color: rgb(234, 204, 194);
+}
+/* -------- navigation top --------*/
+#headnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100vw;
+}
+#headnav ul{
+    display: flex;
+}
+#headnav ul li a{
+    margin: 10px;
+    color: rgb(234, 204, 194);
+    opacity: .3;
+    transition: all .5s ease-out;
+}
+#headnav ul li:nth-of-type(1), #headnav ul li:nth-of-type(5){
+    margin: 0 70px
+}
+#headnav ul li:nth-of-type(5){
+    margin-right: 140px;
+}
+#headnav ul li a:hover{
+    border-bottom: 1.5px solid rgb(234, 204, 194);
+    line-height:.8em;
+    opacity: 1;
+    transition: all .5s ease
+}
+/* -------- navigation aside --------*/
+#sidenav{
+    position: fixed;
+    top: 30vh;
+}
+.outerRing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #fff;
+    opacity: .3;
+    border-radius: 50%;
+}
+.innerRing{
+    height: 5px;
+    width: 5px;
+    padding:2px;
+    border: 1px solid #fff;
+    opacity: .6;
+    border-radius: 50%;
+}
+#sidenav li{
+    display: flex;
+}
+#sidenav li a{
+    margin-left: 30px;
+    line-height: 2;
+}
+aside a{
+    text-align: top;
+    font-size: 10px;
+    color: #fff;
+    opacity: .3;
+    transition: all .5s ease-out;
+}
+aside a:hover{
+    color: #fff;
+    opacity: 1;
+    transition: all .5s ease
+}
+.line{
+    height: 40px;
+    width: 1px;
+    margin-bottom: 15px;
+    margin-left: 23px;
+    background-color: #fff;
+    opacity: .3;
+}
+/* -------- Active Circles --------*/
+/* ABOUT */
+#landingPage #outerRing1{
+    border: 1px solid #fff;
+    opacity: 1;
+}
+#landingPage .innerRing{
+    opacity: .3;
+}
+/* LOUNGER */
+#loungerPage #outerRing2{
+    border: 1px solid #fff;
+    opacity: 1;
+}
+#loungerPage .innerRing{
+    opacity: .3;
+}
+/* EXPERIENCE */
+#experiencePage #outerRing3{
+    border: 1px solid #fff;
+    opacity: 1;
+}
+#experiencePage .innerRing{
+    opacity: .3;
+}
+/* INSPIRATION */
+#inspirationPage #outerRing4{
+    border: 1px solid #fff;
+    opacity: 1;
+}
+#inspirationPage .innerRing{
+    opacity: .3;
+}
+/* SHOP */
+#shopPage #outerRing5{
+    border: 1px solid #fff;
+    opacity: 1;
+}
+#shopPage .innerRing{
+    opacity: .3;
+}
+/* -------- ---------------- --------*/
+/* -------- ABOUT --------*/
+/* Section 1 */
+#landingPage section:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+}
+#landingPage section:nth-of-type(1) div:nth-of-type(1){
+    padding: 10%;
+    margin-left: 15%;
+    margin-right: 40%;
+}
+#landingPage section:nth-of-type(1) div:nth-of-type(2) img{
+    width: 90vw;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/* Section 2 */
+#landingPage section:nth-of-type(2){
+    display: flex;
+    margin: 10% 10%;
+}
+#landingPage section:nth-of-type(2) img{
+    width: 35vw;
+}
+#landingPage section:nth-of-type(2) div{
+    padding-left: 5%;
+}
+#landingPage section:nth-of-type(2) div h2{
+    padding-top: 20%;
+    padding-bottom: 5%;
+}
+/* -------- ---------------- --------*/
+/* -------- LOUNGER --------*/
+/* Section 1 */
+#loungerPage main{
+    display: flex;
+}
+#loungerPage main div{
+    height: 100vh;
+    width: 250vw;
+    background-image: url(../img/section-voyager.jpg);
+    background-size: cover;
+    background-position: -250px 
+    /* keine Ahnung was hier passiert ist :D */
+}
+#loungerPage main article{
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#loungerPage main article h2{
+    margin-bottom: 15%;
+}
+/* -------- ---------------- --------*/
+/* -------- Experience --------*/
+/* Section 1 */
+#experiencePage main{
+    display: flex;
+}
+#experiencePage main div{
+    height: 100vh;
+    width: 320vw;
+    background-image: url(../img/section-experience-1.jpg);
+    background-size: cover;
+    background-position: -250px 
+    /* keine Ahnung was hier passiert ist :D */
+}
+#experiencePage main article{
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#experiencePage main article h2{
+    margin-bottom: 15%;
+}
+/* -------- ---------------- --------*/
+/* -------- Inspiration --------*/
+/* Section 1 */
+#inspirationPage video{
+    max-width: 65vw;
+    height: auto;
+    padding: 8% 17.5%;
+}
+#inspirationPage h3{
+    color: #ebccc2;
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin-bottom: 1%
+}
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+#buttons li{
+    color: #fff;
+    opacity: 0.8;
+    font-size: .7rem;
+    font-weight: 200;
+    line-height: 1.5;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 3px 20px;
+    margin-right: 5px;
+}
+#alchemy{
+    margin-left: 17.5%;
+}
+/* Section 2 */
+#raster{
+    display: flex;
+    margin: 7.5%;
+    margin-left: 17.5%
+}
+#raster img{
+    width: 470px;
+    height: auto;
+}
+#raster article{
+    padding-left: 5%;
+    width: 470px;
+    height: auto;
+}
+#raster h4{
+    color: #ebccc2;
+    font-weight: 200;
+    font-size: 1.2rem;
+    padding-top: 15%;
+    padding-bottom: 3%;
+}
+#raster p{
+    width: 425px;
+    padding-top: 10.5%;
+    padding-bottom: 30%;
+}
+/* -------- ---------------- --------*/
+/* -------- SHOP --------*/
+/* Section 1 */
+#shopPage main{
+    display: flex;
+}
+#shopPage main div{
+    height: 100vh;
+    width: 300vw;
+    background-image: url(../img/section-composition4.jpg);
+    background-size: cover;
+    background-position: -250px 
+    /* keine Ahnung was hier passiert ist :D */
+}
+#shopPage main section{
+    width: 200vw;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+#shopPage main section h3{
+    color: #ebccc2;
+    font-weight: 300;
+    font-size: 1.7rem;
+    padding-bottom: 2%;
+}
+#shopPage main section p:nth-of-type(2){
+    margin-bottom: 10px;
+}
+#buy{
+    background-color: #ebccc2;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+/* -------- ---------------- --------*/
+/* -------- SUBSCRIBE --------*/
+/* Section 1 */
+#subscribePage main{
+    display: flex;
+}
+#subscribePage main div{
+    height: 100vh;
+    width: 53%;
+    background-image: url(../img/section-composition4.jpg);
+    background-size: cover;
+    background-position: -250px 
+    /* keine Ahnung was hier passiert ist :D */
+}
+#subscribePage main article{
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#subscribePage main article h2{
+    margin-bottom: 2%;
+}
+#subscribePage p{
+    width: 425px;
+    padding-top: 10.5%;
+    padding-bottom: 10%;
+}
+#subscribePage main article h3{
+    color: #ebccc2;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding-bottom: 3%;
+}
+.input{
+    margin-bottom: 8px;
+    width: 300px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+::placeholder{
+    padding-left: 5px;
+}
+#Submit{
+    background-color: #ebccc2;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 2px;
+    width: 100px;
+    text-align: center;
+}
+#Submit:hover{
+    background-color: #cc8f7a;
+}
+#Message{
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+/* smaller sized tablets */
+@media (max-width: 735px) {
+    html{
+        font-size: min(60%);
+    }
+}
+/* smartphones */
+@media (max-width: 576px) {
+
+}
