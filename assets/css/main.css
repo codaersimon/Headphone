@@ -118,11 +118,11 @@ aside a:hover{
     opacity: 1;
     transition: all .5s ease
 }
-aside a:hover + .outerRing{
+/* aside a:hover + .outerRing{
     color: #fff;
     opacity: 1;
     transition: all .5s ease
-}
+} */
 .line{
     height: 40px;
     width: 1px;
