@@ -31,7 +31,6 @@ p{
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5;
-
 }
 li{
     list-style: none;
@@ -88,6 +87,7 @@ a:hover{
     width: 15px;
     border: 1px solid #fff;
     opacity: .3;
+    transition: all .5s ease-out;
     border-radius: 50%;
 }
 .innerRing{
@@ -96,13 +96,14 @@ a:hover{
     padding:2px;
     border: 1px solid #fff;
     opacity: .6;
+    transition: all .5s ease-out;
     border-radius: 50%;
 }
 #sidenav li{
     display: flex;
 }
 #sidenav li a{
-    margin-left: 30px;
+    margin-left: 38px;
     line-height: 2;
 }
 aside a{
@@ -113,6 +114,11 @@ aside a{
     transition: all .5s ease-out;
 }
 aside a:hover{
+    color: #fff;
+    opacity: 1;
+    transition: all .5s ease
+}
+aside a:hover + .outerRing{
     color: #fff;
     opacity: 1;
     transition: all .5s ease
@@ -134,6 +140,9 @@ aside a:hover{
 #landingPage .innerRing{
     opacity: .3;
 }
+#landingPage #status1{
+    opacity: 1;
+}
 /* LOUNGER */
 #loungerPage #outerRing2{
     border: 1px solid #fff;
@@ -141,6 +150,9 @@ aside a:hover{
 }
 #loungerPage .innerRing{
     opacity: .3;
+}
+#loungerPage #status2{
+    opacity: 1;
 }
 /* EXPERIENCE */
 #experiencePage #outerRing3{
@@ -150,6 +162,9 @@ aside a:hover{
 #experiencePage .innerRing{
     opacity: .3;
 }
+#experiencePage #status3{
+    opacity: 1;
+}
 /* INSPIRATION */
 #inspirationPage #outerRing4{
     border: 1px solid #fff;
@@ -158,6 +173,9 @@ aside a:hover{
 #inspirationPage .innerRing{
     opacity: .3;
 }
+#inspirationPage #status4{
+    opacity: 1;
+}
 /* SHOP */
 #shopPage #outerRing5{
     border: 1px solid #fff;
@@ -165,6 +183,9 @@ aside a:hover{
 }
 #shopPage .innerRing{
     opacity: .3;
+}
+#shopPage #status5{
+    opacity: 1;
 }
 /* -------- ---------------- --------*/
 /* -------- ABOUT --------*/
@@ -348,7 +369,7 @@ aside a:hover{
 }
 #subscribePage main div{
     height: 100vh;
-    width: 53%;
+    width: 54%;
     background-image: url(../img/section-composition4.jpg);
     background-size: cover;
     background-position: -250px 
@@ -359,12 +380,9 @@ aside a:hover{
     padding-left: 5%;
     padding-right: 5%;
 }
-#subscribePage main article h2{
-    margin-bottom: 2%;
-}
 #subscribePage p{
     width: 425px;
-    padding-top: 10.5%;
+    padding-top: 10%;
     padding-bottom: 10%;
 }
 #subscribePage main article h3{
@@ -376,6 +394,7 @@ aside a:hover{
 .input{
     margin-bottom: 8px;
     width: 300px;
+    outline:none;
 }
 form{
     display: flex;
@@ -404,7 +423,8 @@ form{
 
 
 
-
+/* MEDIAQUERIES ARE NOT FUNCTIONAL YET ... 
+FULLSCREEN ONLY PLEASE */
 
 /* smaller sized tablets */
 @media (max-width: 735px) {
@@ -414,5 +434,4 @@ form{
 }
 /* smartphones */
 @media (max-width: 576px) {
-
 }
